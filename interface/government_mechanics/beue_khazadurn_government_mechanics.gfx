@@ -1,0 +1,39 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_kha_frame"
+		texturefile = "gfx/interface/government_mechanics/khazadurn/kha_frame.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	progressbartype = {
+		name = "GFX_kha_radiance"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/government_mechanics/khazadurn/kha_radiance.dds"
+		textureFile2 = "gfx/interface/government_mechanics/khazadurn/kha_neutral_darker.dds"
+		size = { x = 290 y = 50 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+
+	spriteType = {
+		name = "GFX_kha_crystal_prosperity"
+		texturefile = "gfx/interface/government_mechanics/khazadurn/kha_crystal_prosperity.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_kha_triumvirate_harmony"
+		texturefile = "gfx/interface/government_mechanics/khazadurn/kha_triumvirate_harmony.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_kha_flameforged_legion"
+		texturefile = "gfx/interface/government_mechanics/khazadurn/kha_flameforged_legion.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+}

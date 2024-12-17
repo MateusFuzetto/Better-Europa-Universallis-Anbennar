@@ -1,0 +1,118 @@
+﻿l_english:
+#Country
+ KHA:0 "Khazadurn"
+ KHA_ADJ:0 "Kronium"
+
+ KHA_ideas:0 "Khazadurn Ideas"
+ KHA_ideas_start:0 "Khazadurn Traditions"
+ KHA_ideas_bonus:0 "Khazadurn Ambition"
+
+ KHA_restoring_the_old_empire:0 "Restoring the old Empire"
+ KHA_restoring_the_old_empire_desc:0 ""
+ KHA_serpents_vale_farming:0 "Serpets Vale Farming"
+ KHA_serpents_vale_farming_desc:0 ""
+ KHA_reformed_administration:0 "Reformed Administration"
+ KHA_reformed_administration_desc:0 ""
+ KHA_royal_guard:0 "Royal Guard"
+ KHA_royal_guard_desc:0 ""
+ KHA_imperial_navy:0 "Imperial Navy"
+ KHA_imperial_navy_desc:0 ""
+ KHA_great_empire:0 "Great Empire"
+ KHA_great_empire_desc:0 ""
+ KHA_almighty_king:0 "Almighty King"
+ KHA_almighty_king_desc:0 ""
+
+ #Missions
+ KHA_radiant_kingdom_title:0 "Radiant Kingdom"
+ KHA_radiant_kingdom_desc:0 "The seven legendary gems, each holding immense power, have been scattered and forgotten over time. We should recover them and use their power to create a mighty Dwarven Empire. By harnessing the magic of these ancient gems, we can restore our ancestral glory and establish a dominion that will stand as a testament to our enduring strength and unity."
+
+ KHA_reclaim_the_depths_title:0 "Reclaim our ancestor home"
+ KHA_reclaim_the_depths_desc:0 "Much of our hold home has been destroyed by the Orcs. We should clear up the rubble and reclaim the lower levels of Amldihr."
+
+ KHA_restore_the_olds_title:0 "Restore the Ancestral Holds"
+ KHA_restore_the_olds_desc:0 "The grand halls and fortresses of our ancestors lie in ruins, remnants of a glorious past now overshadowed by time and wars. It is our duty to restore these holds, to their past glory."
+
+ KHA_improve_our_capital_title:0 "Enhance the Capital Hold"
+ KHA_improve_our_capital_desc:0 "Our capital hold stands as a symbol of our people's strength and resilience, but it is in need of significant improvements to reach its true potential."
+
+ KHA_centralize_our_holdings_operations_title:0 "Centralize Operations"
+ KHA_centralize_our_holdings_operations_desc:0 "Our various holds operate with a degree of autonomy that, while fostering independence, leads to inefficiencies and fragmented efforts. To ensure our survival and prosperity, we must centralize operations."
+ KHA_centralize_our_holdings_operations_tooltip:0 "This will enable us to initiate excavation operations across all our holds."
+
+ KHA_the_mages_of_kazhadurn_title:0 "Mages of Kazhadurn"
+ KHA_the_mages_of_kazhadurn_desc:0 "The discovery of Damestear has provided us with a unique opportunity to enhance the capabilities of the Mages of Khazadurn. This valuable resource will be used to support their research and development, allowing them to reach new heights in their magical prowess. By investing in our mages, we ensure that they can unlock powerful spells and arcane knowledge, which will benefit our entire hold and secure our magical dominance."
+
+ KHA_improve_amlharaz_title:0 "Dig in Amlharaz"
+ KHA_improve_amlharaz_desc:0 "The excavation in the ancient mines of Amlharaz has unearthed a remarkable find—veins of precious gems hidden deep within the earth. These radiant stones, long buried beneath the ruins of our ancestors' hold, possess both immense beauty and untapped magical potential."
+
+ KHA_improve_hall_of_ancestors_title:0 "Dig in Hall of Ancestors"
+ KHA_improve_hall_of_ancestors_desc:0 "The Hall of Ancestors is a revered place, celebrating our rich heritage and illustrious lineage. To further honor our forefathers and inspire future generations, we must enhance it."
+
+ KHA_improve_verkal_vazkron_title:0 "Dig in Verkal Vazkron"
+ KHA_improve_verkal_vazkron_desc:0 "The long-forgotten depths of Verkal Vazkron have revealed their greatest secret—veins of mithril, the legendary metal prized for its strength and lightness. This discovery marks a turning point for our hold, as mithril is not only a valuable resource but also a symbol of our craftsmanship and military prowess."
+
+ KHA_reclaim_the_gates:0 "Reclaim the Gates"
+ KHA_reclaim_the_gates_desc:0 "After years of being lost to the ravages of time and enemies, the ancient gates of the old empire have been reconquered. With these once-mighty fortifications back in our control, we now stand ready to expand deeper into our ancestral territories."
+
+ #Decisions
+ KHA_found_nation_title:0 "Found a new Empire Khazadurn"
+ KHA_found_nation_desc:0 "Click this decision if you want to form Khazadurn."
+ KHA_found_nation:0 "Reform Khazadurn §GSUBMOD PATH!§!"
+ 
+ KHA_reform_adventure_title:0 "Reform our adventure company"
+ KHA_reform_adventure_desc:0 "Click this decision to gain reform progress using our ancestor knowledge."
+ KHA_reform_adventure:0 "Reform our Adventure Company §GSUBMOD PATH!§!"
+
+ #Modifiers
+ khazadurn_restoring_our_country:0 "Restoring Our Country"
+ khazadurn_the_ancient_knowledge:0 "The Ancient Knowledge"
+ khazadurn_diamond_power:0 "Diamond Gem Power"
+ khazadurn_agate_power:0 "Agate Gem Power"
+ khazadurn_sapphire_power:0 "Sapphire Gem Power"
+ khazadurn_jade_power:0 "Jade Gem Power"
+ khazadurn_amethyst_power:0 "Amethyst Gem Power"
+ khazadurn_ruby_power:0 "Ruby Gem Power"
+ khazadurn_citrine_power:0 "Citrine Gem Power"
+
+ #Events
+ khazadurn.1.t:0 "Discovery of Damestear Veins"
+ khazadurn.1.d:0 "Exciting news reverberates through the capital as rich veins of Damestear, the precious and mystical mineral, have been discovered within our hold. This rare find promises to bring unprecedented wealth and power to our people, as Damestear is highly sought after for its unique properties. The extraction and processing of this mineral will elevate our capital's status and bolster our economy."
+ khazadurn.1.a:0 "Harness the Power of Damestear"
+
+ khazadurn.2.t:0 "The Radiant Kingdom"
+ khazadurn.2.d:0 "After extensive studies, we have discovered that each of the seven legendary dwarven gems holds unique powers that can transform our kingdom. Our ancestors began researching these gems but never completed their work. Now, it falls to us to continue their quest. As we reclaim each gem, new powers will be unlocked, strengthening our realm and bringing us closer to our ultimate goal, the creation of and unified dwarven empire."
+ khazadurn.2.a:0 "Lets start the quest for the gems"
+
+ khazadurn.3.t:0 "Discovery of Precursor Relics"
+ khazadurn.3.d:0 "A momentous discovery has been made within our hold, ancient relics from the Precursors have been unearthed. These artifacts, imbued with the wisdom and craftsmanship of a long-lost civilization, hold untold secrets and power. This find presents an unparalleled opportunity to delve into the mysteries of the past, harnessing the knowledge and strength of the Precursors to elevate our people and secure our future prosperity."
+ khazadurn.3.a:0 "Unlock the Secrets of the Precursors"
+
+ khazadurn.4.t:0 "Runic Mastery"
+ khazadurn.4.d:0 "By embracing Runic Mastery, we establish a new era where runic knowledge and arcane arts shape our governance. This reform acknowledges the power of ancient runes, placing their masters in positions of authority to guide our holds future and enhance our magical capabilities."
+ khazadurn.4.a:0 "Empower Rune Masters"
+ 
+ khazadurn.5.t:0 "Discovery of Gems"
+ khazadurn.5.d:0 "By embracing Runic Mastery, we establish a new era where runic knowledge and arcane arts shape our governance. This reform acknowledges the power of ancient runes, placing their masters in positions of authority to guide our holds future and enhance our magical capabilities."
+ khazadurn.5.a:0 "Empower Rune Masters"
+
+ khazadurn.6.t:0 "Discovery of Mithril"
+ khazadurn.6.d:0 "By embracing Runic Mastery, we establish a new era where runic knowledge and arcane arts shape our governance. This reform acknowledges the power of ancient runes, placing their masters in positions of authority to guide our holds future and enhance our magical capabilities."
+ khazadurn.6.a:0 "Empower Rune Masters"
+
+ #Government Reform
+ khazadurn_radiant_monarchy_reform:0 "Radiant Kingdom"
+ khazadurn_radiant_monarchy_reform_desc:0 "The Radiant Kingdom represents the pinnacle of Dwarven governance, combining the ancient wisdom of our forebears with the immense power of the seven legendary gems."
+ ability_khazadurn_radiance_mechanic:0 "Radiance"
+ khazadurn_radiance_power:0 "Radiance"
+ khazadurn_radiance_power_desc:0 "\n§YRadiance§! is increased by the following:\n§GPositive stability\n§!\n§YRadiance§! is decreased by the following:\n§RNegative stability§!\n\n"
+ monthly_khazadurn_radiance_power:0 "Monthly Radiance"
+ khazadurn_radiance_power_gain_modifier:0 "Radiance Modifier"
+ crystal_prosperity:0 "Crystal Prosperity"
+ crystal_prosperity_desc:0 "The effect will be better if you have the Diamond and Agate Gems."
+ flameforged_legion:0 "Flameforged Legion"
+ flameforged_legion_desc:0 "The effect will be better if you have the Ruby and Citrine Gems."
+ triumvirate_harmony:0 "Triumvirate Harmony"
+ triumvirate_harmony_desc:0 "The effect will be better if you have the Jade, Shappire and Amethyst Gems."
+
+ khazadurn_runic_mastery_reform:0 "Runic Mastery"
+ khazadurn_runic_mastery_reform_desc:0 "The Runic Mastery reform revives and refines the ancient art of runic magic, a cornerstone of Dwarven tradition. By channeling the power of runes into our fortifications and crafting, we ensure that our hold not only survives but thrives, blending historical wisdom with modern strategy for our defense and prosperity."

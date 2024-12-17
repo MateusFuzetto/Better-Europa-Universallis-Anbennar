@@ -1,0 +1,238 @@
+khazadurn_radiance_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 12
+	available = {
+		has_reform = khazadurn_radiant_monarchy_reform
+	}
+
+	powers = {
+		khazadurn_radiance_power = {
+			gui = khazadurn_radiance
+			max = 150
+			min = 0
+			reset_on_new_ruler = no
+			base_monthly_growth = 0.05
+			is_good = yes
+			scaled_modifier = {
+				start_value = 0
+				end_value = 150
+				modifier = {
+					yearly_absolutism = 2
+					global_unrest = -2
+					discipline = 0.05
+					diplomatic_reputation = 3
+				}
+			}
+		}
+	}
+	interactions = {
+		crystal_prosperity = {
+			gui = khazadurn_crystal_prosperity
+			cost_type = khazadurn_radiance_power
+			cost = 75
+			trigger = {
+				OR = {
+					has_country_modifier = dwarovkron_agate
+					has_country_modifier = dwarovkron_diamond
+					has_country_modifier = dwarovkron_full
+				}
+			}
+			effect = {
+				if = {
+					limit = {
+						OR = {
+							has_country_modifier = dwarovkron_agate
+							has_country_modifier = dwarovkron_full
+						}
+					}
+					hidden_effect = {
+						remove_country_modifier = khazadurn_agate_power
+					}
+					add_country_modifier = {
+						name = khazadurn_agate_power
+						duration = 3650
+					}
+					add_years_of_income = 3
+					add_inflation = -5
+					add_corruption = -5
+				}
+				if = {
+					limit = {
+						OR = {
+							has_country_modifier = dwarovkron_diamond
+							has_country_modifier = dwarovkron_full
+						}
+					}
+					hidden_effect = {
+						remove_country_modifier = khazadurn_diamond_power
+					}
+					add_country_modifier = {
+						name = khazadurn_diamond_power
+						duration = 3650
+					}
+					add_mercantilism = 5
+				}
+				add_adm_power = 175
+			}
+			cooldown_years = 0
+			ai_chance = {}
+		}
+
+		triumvirate_harmony = {
+			gui = khazadurn_triumvirate_harmony
+			cost_type = khazadurn_radiance_power
+			cost = 75
+			trigger = {
+				OR = {
+					has_country_modifier = dwarovkron_jade
+					has_country_modifier = dwarovkron_sapphire
+					has_country_modifier = dwarovkron_amethyst
+					has_country_modifier = dwarovkron_full
+				}
+			}
+			effect = {
+				if = {
+					limit = {
+						OR = {
+							has_country_modifier = dwarovkron_sapphire
+							has_country_modifier = dwarovkron_full
+						}
+					}
+					add_stability = 1
+					if = {
+						limit = { has_estate = estate_mages }
+						add_estate_loyalty = {
+							estate = estate_mages
+							loyalty = 10
+						}
+					}
+					if = {
+						limit = { has_estate = estate_artificers }
+						add_estate_loyalty = {
+							estate = estate_artificers
+							loyalty = 10
+						}
+					}
+					add_estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 10
+					}
+					add_estate_loyalty = {
+						estate = estate_church
+						loyalty = 10
+					}
+					add_estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 10
+					}
+					add_estate_loyalty = {
+						estate = estate_adventurers
+						loyalty = 10
+					}
+					hidden_effect = {
+						remove_country_modifier = khazadurn_sapphire_power
+					}
+					add_country_modifier = {
+						name = khazadurn_sapphire_power
+						duration = 3650
+					}
+					custom_tooltip = enforce_absolute_rule_tt
+					hidden_effect = {
+						if = {
+							limit = {
+								has_parliament = yes
+								has_active_debate = yes
+							}
+							end_current_debate = yes
+						}
+						auto_complete_estate_agenda = {
+							estate = all
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							has_country_modifier = dwarovkron_amethyst
+							has_country_modifier = dwarovkron_full
+						}
+					}
+					hidden_effect = {
+						remove_country_modifier = khazadurn_amethyst_power
+					}
+					add_country_modifier = {
+						name = khazadurn_amethyst_power
+						duration = 3650
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							has_country_modifier = dwarovkron_jade
+							has_country_modifier = dwarovkron_full
+						}
+					}
+					hidden_effect = {
+						remove_country_modifier = khazadurn_jade_power
+					}
+					add_country_modifier = {
+						name = khazadurn_jade_power
+						duration = 3650
+					}
+				}
+				add_dip_power = 175
+			}
+			cooldown_years = 0
+			ai_chance = {}
+		}
+		flameforged_legion = {
+			gui = khazadurn_flameforged_legion
+			cost_type = khazadurn_radiance_power
+			cost = 75
+			trigger = {
+				OR = {
+					has_country_modifier = dwarovkron_citrine
+					has_country_modifier = dwarovkron_ruby
+					has_country_modifier = dwarovkron_full
+				}
+			}
+			effect = {
+				if = {
+					limit = {
+						OR = {
+							has_country_modifier = dwarovkron_citrine
+							has_country_modifier = dwarovkron_full
+						}
+					}
+					hidden_effect = {
+						remove_country_modifier = khazadurn_citrine_power
+					}
+					add_country_modifier = {
+						name = khazadurn_citrine_power
+						duration = 3650
+					}
+					add_yearly_sailors = 2
+				}
+				if = {
+					limit = {
+						OR = {
+							has_country_modifier = dwarovkron_ruby
+							has_country_modifier = dwarovkron_full
+						}
+					}
+					hidden_effect = {
+						remove_country_modifier = khazadurn_ruby_power
+					}
+					add_country_modifier = {
+						name = khazadurn_ruby_power
+						duration = 3650
+					}
+					add_yearly_manpower = 2
+				}
+				add_mil_power =	175
+			}
+			cooldown_years = 0
+			ai_chance = {}
+		}
+	}
+}

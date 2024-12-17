@@ -1,0 +1,17 @@
+# country
+on_new_monarch = {
+	if = {
+		limit = {
+			has_reform = khazadurn_runic_mastery_reform
+			NOT = { ruler_has_personality = mage_personality }
+		}
+		force_add_ruler_personality = { personality = mage_personality }
+	}
+}
+
+on_new_heir = {
+	if = {
+		limit = { has_reform = khazadurn_runic_mastery_reform }
+		add_heir_personality = mage_personality
+	}
+}

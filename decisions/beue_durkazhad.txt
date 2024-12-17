@@ -1,0 +1,73 @@
+country_decisions = {
+	KHA_found_nation = {
+		major = yes
+		potential = {
+			owns = 4119 #Khazadurn
+			has_reform = dwarovar_adventurer_reform
+			has_country_modifier = dwarven_administration
+			NOT = { has_country_flag = formed_diggy_formable }
+			NOT = { exists = KHA }
+		}
+		provinces_to_highlight = {
+			province_id = 4119
+			NOT = { is_core = ROOT }
+		}
+		allow = {
+			owns_core_province = 4119
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			special_formation_trigger = yes
+		}
+		effect = {
+			adventurer_hold_formation = { tag = KHA culture = kronium capital_id = 4119 }
+			swap_non_generic_missions = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+
+	KHA_reform_adventure = {
+		major = yes
+		potential = {
+			owns = 4119 #Khazadurn
+			has_reform = dwarovar_adventurer_reform
+			has_country_modifier = dwarven_administration
+			NOT = { has_country_flag = formed_diggy_formable }
+			NOT = { exists = KHA }
+			NOT = { 4119 = { has_province_modifier = khazadurn_the_ancient_knowledge } }
+		}
+		provinces_to_highlight = {
+			province_id = 4119
+			NOT = { is_core = ROOT }
+		}
+		allow = {
+			treasury = 200
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			adm_power = 175
+			dip_power = 175
+			mil_power = 175
+		}
+		effect = {
+			change_government_reform_progress = 500
+			add_treasury = -200
+			add_adm_power = -175
+			add_dip_power = -175
+			add_mil_power = -175
+
+			4119 = {
+				add_province_modifier = {
+					name = "khazadurn_the_ancient_knowledge"
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}

@@ -1,0 +1,129 @@
+﻿namespace = khazadurn
+
+country_event = {
+	id = khazadurn.1
+	title = khazadurn.1.t
+	desc = khazadurn.1.d
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes
+	}
+
+	option = {
+		name = khazadurn.1.a
+		4119 = {
+			change_trade_goods = damestear
+			set_province_flag = permanent_damestear
+		}
+	}
+}
+
+country_event = {
+	id = khazadurn.2
+	title = khazadurn.2.t
+	desc = khazadurn.2.d
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes
+	}
+
+	option = {
+		name = khazadurn.2.a
+		change_government_reform_progress = -100
+		change_government = monarchy
+		add_government_reform = khazadurn_radiant_monarchy_reform
+	}
+}
+
+country_event = {
+	id = khazadurn.3
+	title = khazadurn.3.t
+	desc = khazadurn.3.d
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes
+	}
+
+	option = {
+		name = khazadurn.3.a
+		4128 = {
+			change_trade_goods = precursor_relics
+			set_province_flag = permanent_precursor_relics
+		}
+	}
+}
+
+country_event = {
+	id = khazadurn.4
+	title = khazadurn.4.t
+	desc = khazadurn.4.d
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes
+	}
+
+	option = {
+		name = khazadurn.4.a
+		change_government_reform_progress = -50
+		add_adm_power = -125
+		add_government_reform = khazadurn_runic_mastery_reform
+	}
+}
+
+country_event = {
+	id = khazadurn.5
+	title = khazadurn.5.t
+	desc = khazadurn.5.d
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes
+	}
+
+	option = {
+		name = khazadurn.5.a
+		4149 = {
+			change_trade_goods = gems
+		}
+	}
+}
+
+country_event = {
+	id = khazadurn.6
+	title = khazadurn.6.t
+	desc = khazadurn.6.d
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes
+	}
+
+	option = {
+		name = khazadurn.6.a
+		4122 = {
+			change_trade_goods = mithril
+		}
+	}
+}

@@ -1,0 +1,327 @@
+khazadurn_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KHA }
+
+	KHA_radiant_kingdom = {
+		icon = mission_crowning
+		position = 1
+
+		trigger = {
+			OR = {
+				has_country_modifier = dwarovkron_crown
+				has_country_modifier = dwarovkron_full
+			}
+			government_reform_progress = 100
+		}
+
+		effect = {
+			country_event = { id = khazadurn.2 }
+		}
+	}
+
+	KHA_the_mages_of_kazhadurn = {
+		icon = mission_crystal_cave
+		position = 4
+		required_missions = {
+			KHA_radiant_kingdom
+			KHA_improve_our_capital
+		}
+
+		trigger = {
+			reform_level = 2
+			adm_power = 125
+			government_reform_progress = 50
+		}
+
+		effect = {
+			country_event = { id = khazadurn.4 }
+		}
+	}
+
+	KHA_artificiers_of_kazhadurn = {
+		icon = mission_crystal_cave
+		position = 7
+		required_missions = {
+			KHA_the_mages_of_kazhadurn
+		}
+
+		trigger = {
+
+		}
+
+		effect = {
+
+		}
+	}
+}
+
+khazadurn_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KHA }
+
+	KHA_improve_hall_of_ancestors = {
+		icon = la_marseillaise
+		position = 5
+		provinces_to_highlight = { province_id = 4128 }
+		required_missions = { KHA_centralize_our_holdings_operations }
+
+		trigger = { 4128 = { has_dwarven_hold_2 = yes } }
+
+		effect = {
+			country_event = { id = khazadurn.3 }
+		}
+	}
+}
+
+khazadurn_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KHA }
+
+	KHA_reclaim_the_depths = {
+		icon = la_marseillaise
+		position = 1
+		provinces_to_highlight = { area = amldihr_area }
+
+		trigger = {
+			4119 = {
+				owned_by = ROOT
+			}
+			4149 = {
+				owned_by = ROOT
+			}
+			4128 = {
+				owned_by = ROOT
+			}
+			4122 = {
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			add_stability_or_adm_power = yes
+			add_prestige = 25
+			add_splendor = 400
+
+			amldihr_area = {
+				add_core = ROOT
+			}
+		}
+	}
+
+	KHA_restore_the_olds = {
+		icon = mission_treasure_room
+		position = 2
+		provinces_to_highlight = { area = amldihr_area }
+		required_missions = { KHA_reclaim_the_depths }
+
+		trigger = {
+			4119 = {
+				AND = {
+					NOT = { has_province_modifier = ruined_hold }
+					NOT = { has_province_modifier = infested_hold }
+				}
+			}
+			4149 = {
+				AND = {
+					NOT = { has_province_modifier = ruined_hold }
+					NOT = { has_province_modifier = infested_hold }
+				}
+			}
+			4128 = {
+				AND = {
+					NOT = { has_province_modifier = ruined_hold }
+					NOT = { has_province_modifier = infested_hold }
+				}
+			}
+			4122 = {
+				AND = {
+					NOT = { has_province_modifier = ruined_hold }
+					NOT = { has_province_modifier = infested_hold }
+				}
+			}
+		}
+
+		effect = {
+			royal_terrace_area = {
+				add_permanent_claim = ROOT
+			}
+			assembly_terrace_area = {
+				add_permanent_claim = ROOT
+			}
+			castle_hill_area = {
+				add_permanent_claim = ROOT
+			}
+			common_terrace_area = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "khazadurn_restoring_our_country"
+				duration = 3650
+			}
+		}
+	}
+
+	KHA_improve_our_capital = {
+		icon = mission_magnificent_castle
+		position = 3
+		provinces_to_highlight = { province_id = 4119 }
+		required_missions = { KHA_restore_the_olds }
+
+		trigger = { 4119 = { has_dwarven_hold_3 = yes } }
+
+		effect = {
+			country_event = { id = khazadurn.1 }
+		}
+	}
+
+	KHA_centralize_our_holdings_operations = {
+		icon = mission_noble_council
+		position = 4
+		provinces_to_highlight = { area = amldihr_area }
+		required_missions = { KHA_improve_our_capital }
+
+		trigger = {
+			treasury = 500
+			4119 = {
+				development = 45
+			}
+			4149 = {
+				development = 35
+			}
+			4128 = {
+				development = 35
+			}
+			4122 = {
+				development = 35
+			}
+		}
+
+		effect = {
+			set_country_flag = hold_operation
+			add_treasury = -500
+			custom_tooltip = KHA_centralize_our_holdings_operations_tooltip
+		}
+	}
+
+	KHA_improve_amlharaz = {
+		icon = la_marseillaise
+		position = 5
+		provinces_to_highlight = { province_id = 4149 }
+		required_missions = { KHA_centralize_our_holdings_operations }
+
+		trigger = { 4149 = { has_dwarven_hold_2 = yes } }
+
+		effect = {
+			country_event = { id = khazadurn.5 }
+		}
+	}
+}
+
+khazadurn_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KHA }
+
+	KHA_improve_verkal_vazkron = {
+		icon = la_marseillaise
+		position = 5
+		provinces_to_highlight = { province_id = 4122 }
+		required_missions = { KHA_centralize_our_holdings_operations }
+
+		trigger = { 4122 = { has_dwarven_hold_2 = yes } }
+
+		effect = {
+			country_event = { id = khazadurn.6 }
+		}
+	}
+}
+
+khazadurn_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KHA }
+
+	KHA_reclaim_the_gates = {
+		icon = la_marseillaise
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4121
+				province_id = 4120
+			}
+		}
+		required_missions = { KHA_restore_the_olds }
+
+		trigger = {
+			4121 = {
+				owned_by = ROOT
+			}
+			4120 = {
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "khazadurn_reclamation_of_our_land"
+				duration = 18250
+			}
+		}
+	}
+
+	KHA_reclaim_the_vale = {
+		icon = la_marseillaise
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = royal_terrace_area
+				area = assembly_terrace_area
+				area = castle_hill_area
+				area = common_terrace_area
+			}
+		}
+		required_missions = { KHA_reclaim_the_gates }
+
+		trigger = {
+			royal_terrace_area = {
+				type = all
+				owned_by = ROOT
+			}
+			assembly_terrace_area = {
+				type = all
+				owned_by = ROOT
+			}
+			castle_hill_area = {
+				type = all
+				owned_by = ROOT
+			}
+			common_terrace_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "khazadurn_colonization_focus"
+				duration = 18250
+			}
+			royal_terrace_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}

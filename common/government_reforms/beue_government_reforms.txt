@@ -1,0 +1,35 @@
+khazadurn_radiant_monarchy_reform = {
+	icon = "godhood"
+	allow_convert = no
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		mission_completed = KHA_radiant_kingdom
+	}
+	legacy_equivalent = feudal_monarchy
+	modifiers = {
+		governing_capacity = 250
+		max_absolutism = 10
+		yearly_absolutism = 0.5
+		global_autonomy = -0.15
+		monarch_diplomatic_power = 1
+	}
+	government_abilities = {
+		khazadurn_radiance_mechanic
+	}
+}
+
+khazadurn_runic_mastery_reform = {
+	icon = "eternal_council"
+	potential = {
+		has_estate = estate_mages
+		mission_completed = KHA_the_mages_of_kazhadurn
+	}
+	modifiers = {
+		mages_loyalty_modifier = 0.1
+		mages_influence_modifier = 0.05
+		monarch_military_power = 1
+		defensiveness = 0.15
+		max_hostile_attrition = 3
+	}
+}
